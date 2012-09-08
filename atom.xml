@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[DodoLab]]></title>
+  <link href="http://lazybean.github.com/dodolab/atom.xml" rel="self"/>
+  <link href="http://lazybean.github.com/dodolab/"/>
+  <updated>2012-09-08T19:20:52+02:00</updated>
+  <id>http://lazybean.github.com/dodolab/</id>
+  <author>
+    <name><![CDATA[Dodo]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Interactive eCard]]></title>
+    <link href="http://lazybean.github.com/dodolab/blog/2012/09/02/interactive-ecard/"/>
+    <updated>2012-09-02T11:46:00+02:00</updated>
+    <id>http://lazybean.github.com/dodolab/blog/2012/09/02/interactive-ecard</id>
+    <content type="html"><![CDATA[<p>In order to discover and practice html canvas I worked on a interactive thanks/post card.
+This card is composed with a background, and some inner frames containing pictures. By clicking on the background or frames the photos are iterating.</p>
+
+<p><a href="http://lazybean.github.com/thxcard/index.html">
+You can see an example there.
+</a>
+You need to sucessfully pass the tutorial before seeing the actual card.</p>
+
+<p>I use YUI3 framework that helps code organization and good infrastructure; the card and the tutorial are two separated modules loaded on demain in the main script.
+Both modules extends widgets to leverage the Attributes and the widget lifecycle.</p>
+
+<p>In the first versions, initial logging was quite long, because all photos have to be loaded initially. Now, only the first photos are loaded at the beginning; the others are loaded when needed; therefore I can include as many photos as I want without impactict loading time.</p>
+
+<p>Differents backgrounds have different configurations (number and position of frames). The modules can easily be reused for other interactives cards.</p>
+]]></content>
+  </entry>
+  
+</feed>
